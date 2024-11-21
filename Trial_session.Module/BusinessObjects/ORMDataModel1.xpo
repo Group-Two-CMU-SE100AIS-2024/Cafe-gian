@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5b63125b-8b54-43bf-8428-4fc380354b92" namespace="Trial_session.Module.BusinessObjects.ORMDataModel1" dataBaseShemaInfo="H4sIAAAAAAAEAMVW207bQBB9r9R/sPLM+rq+IccIEgpRW4S4VH0de8eJVXsdee0k/H3HuUECtKmK4MXynDmjnbNzVrvRyaIstBnWKq9kv2fpZu8k/vwpOgOFt01VwxhHMqs0Ykl1vFCi35s0zfTYMObzuT539KoeG7ZpWsbP799u0wmW0NuS87+TWS5VAzLFHq2qadEdJAWqbsllvEGeABvoCkqMz6CKjMdwyziXHRY3dYuRsQ62yWGuOuB+KqDBOINCEWkX3HIv2lyMRMxDL3FcbjKw/YTxgHMWOFbGRCg4t0JXuB5Expq8LR5URVtKtdP8qzAlOg2rZHwJo2FkPAF2iH+S968Sn8pMOfpmAjZLwPIZz0QnOOAUuiYn6S5pfiaTyo3/UVrNqB35/mJDJ3N8O8hYEroO457jMbA8+niOE7iuEBZ6B4t9CV0782AzX8K7eBnRxJB7KQP6I92+xQLLEwxEENgi4bbA9E29TIf0I8zsBFnITS5YmIRkZts2adI8YVlKZxhTcHkg3trMcgwPzQTkWEL5/ooD2xRh4rosEwE5OqMzTCO1WGaBbWZpmAIcrvgQR6/jR0rU3RkorusqXYKasYJ/rC6YeIiz88W0RqX0ITSgz2yuW0faOt3vIt3XzSNt0BZNW2NfYtvUUBxp121S5OlXfLirfqHsJ0EgLN/lwjdN5CGdnM0Sy/UGBSiFqhvATbvd3ehUUGuY5Yt1Xyvots12oBssqxnuE1foPndA92R8L9Nu5kibu4xXW/NSDxHtzBTrJv/g3l5pI7pAiTXZa1CVJcpGrT36DN4hD1HlY/r9kpMV9ip2c8uyIRbY4KlSVZpDQyPb1LyQWBZctUXR2ewMJzDLq5pclAH5gw7YfoZeLsbe0yX+DYYL1Y3jCAAA" generateStoredProcedures="false" fieldNameCase="Unchanged" generateDefaultConstructors="false" useNameOf="true" createdInVersion="24.1.7.0" generateJsonSerializationContractResolver="false" generateServiceCollectionExtensions="false" lastModifiedInVersion="24.1.7.0" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+  <classes>
+    <dataBaseObjectModelHasClasses Id="1ae27a62-bced-415b-aa54-c029de03160b">
+      <xpObject Id="496b3540-a27b-4844-831f-d9d44195d56a" name="Bao" baseClass="DevExpress.Persistent.BaseImpl.BaseObject" userFileName="Bao" designerFileName="Bao.Designer" className="Bao" virtualBaseClass="DevExpress.Persistent.BaseImpl.BaseObject" virtualName="Bao" customAttributes="DefaultProperty(&quot;Hovaten&quot;)">
+        <fields>
+          <generalXpObjectHasFields Id="ab31fc7b-5037-4080-aeb3-2fd7af4ba747">
+            <field Id="c4e70ba2-ba17-4fd0-a284-ba504a27531f" name="HaID" virtualColumnType="Ha" logicalType="Ha" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="dfde6320-454f-4658-bbd1-1dab280cf556">
+            <field Id="93f3728f-b953-4636-a166-a633855dd1e6" name="Hovaten" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" />
+          </generalXpObjectHasFields>
+        </fields>
+        <aggrTarget>
+          <aggregation Id="817a42a4-1138-44aa-94be-f223935b184e" sourceCollectionName="Has" name="HaReferencesBao" targetFieldName="BaoID">
+            <xpObjectMoniker Id="ee0e946c-aee0-4671-816d-ad882db42dec" />
+          </aggregation>
+        </aggrTarget>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="2f515ccf-bdbe-40b0-93df-930f864f5573">
+            <collectionField Id="6fa0910c-f274-47db-a46a-5a9676626865" name="Has" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="741b6cc9-b416-47a3-9ad8-039cfee51991">
+      <xpObject Id="ee0e946c-aee0-4671-816d-ad882db42dec" name="Ha" baseClass="DevExpress.Persistent.BaseImpl.BaseObject" userFileName="Ha" designerFileName="Ha.Designer" className="Ha" virtualBaseClass="DevExpress.Persistent.BaseImpl.BaseObject" virtualName="Ha" customAttributes="DefaultProperty(&quot;ngaythangnam&quot;)">
+        <fields>
+          <generalXpObjectHasFields Id="074edf6f-c148-475f-9484-8ba652d17e29">
+            <field Id="38f9404d-9b97-4220-b94b-fc27beca548d" name="BaoID" virtualColumnType="Bao" logicalType="Bao" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="250fec8e-a9a5-4787-b52e-6359d14c87c4">
+            <field Id="820d9b55-fd83-4f17-8821-f1a20fc9caad" name="ngaythangnam" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.ExpressApp.Model.ModelDefault(&quot;EditMask&quot;, &quot;dd/MM/yyyy HH:mm&quot;),&#xD;&#xA;DevExpress.ExpressApp.Model.ModelDefault(&quot;DisplayFormat&quot;, &quot;{0:dd/MM/yyyy HH:mm}&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <aggrTarget>
+          <aggregation Id="f917f6d1-e7fd-4cf1-af56-a54cfaeef721" sourceCollectionName="Baos" name="BaoReferencesHa" targetFieldName="HaID">
+            <xpObjectMoniker Id="496b3540-a27b-4844-831f-d9d44195d56a" />
+          </aggregation>
+        </aggrTarget>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="14b44e51-d408-4a8d-8fb4-2732bb018568">
+            <collectionField Id="58f57b32-8ee2-49c2-89b7-a603b05ec61e" name="Baos" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+  </classes>
+</dataBaseObjectModel>
